@@ -6,6 +6,7 @@ import lombok.Data;
 public class FeaturePermissionRequest {
 
     private String featureName;
-    
+    private String email;
+    private boolean enable;
 
 }
