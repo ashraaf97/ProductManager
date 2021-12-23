@@ -1,4 +1,4 @@
-package com.example.ProductManager.feature;
+package com.example.ProductManager.featurepermissions;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -7,4 +7,8 @@ import lombok.Data;
 @AllArgsConstructor
 public class FeaturePermissionStatus {
     private boolean canAccess;
+
+    public FeaturePermissionStatus() {
+
+    }
 }

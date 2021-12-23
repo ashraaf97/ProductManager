@@ -1,4 +1,4 @@
-package com.example.ProductManager.feature;
+package com.example.ProductManager.featurepermissions;
 
 import lombok.Data;
 
