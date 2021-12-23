@@ -1,7 +1,8 @@
 # ProductManager
  Simple Springboot microservice that set and return status of user for certain feature.
 
-Feature:
+Details:
+
 GET /feature?email=XXX&featureName=XXX
 This endpoint receives email (user’s email) and featureName as request parameters and
 returns the following response in JSON format.
