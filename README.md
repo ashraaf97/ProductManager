@@ -14,7 +14,7 @@ Example Response:
 POST /feature
 This endpoint receives the following request in JSON format and returns an empty
 response with HTTP Status OK (200) when the database is updated successfully, otherwise
-returns H􀂂p Status Not Modified (304).
+returns Http Status Not Modified (304).
 Example Request:
 
 {
