@@ -16,9 +16,8 @@ public class FeatureController extends BaseController{
     public FeaturePermissionStatus getUserFeaturePermission(@RequestParam String email, @RequestParam String featureName) throws Exception {
 
         User user = userService.findUserByEmail(email);
-        FeaturePermissionStatus featurePermissionStatus = featurePermissionService.findFeaturePermissionStatusByUserId(user.getId(),featureName);
+        return featurePermissionService.findFeaturePermissionStatusByUserId(user.getId(),featureName);
 
-        return featurePermissionStatus;
 
     }
 

@@ -27,17 +27,18 @@ public class FeaturePermissionService {
         switch(featureName) {
             case "feature_a":
                 featurePermissions.setFeatureA(status);
-                return featurePermissionsRepository.save(featurePermissions);
+                break;
             case "feature_b":
                 featurePermissions.setFeatureB(status);
-                return featurePermissionsRepository.save(featurePermissions);
+                break;
             case "feature_c":
                 featurePermissions.setFeatureC(status);
-                return featurePermissionsRepository.save(featurePermissions);
+                break;
             default:
                 throw new Exception("Feature not found");
         }
 
+        return featurePermissionsRepository.save(featurePermissions);
     }
 
     public FeaturePermissions saveFeaturePermissions(FeaturePermissions featurePermissions){
@@ -52,17 +53,17 @@ public class FeaturePermissionService {
         switch(featureName) {
             case "feature_a":
                 featurePermissionStatus.setCanAccess(featurePermissions.isFeatureA());
-                return featurePermissionStatus;
+                break;
             case "feature_b":
                 featurePermissionStatus.setCanAccess(featurePermissions.isFeatureB());
-                return featurePermissionStatus;
+                break;
             case "feature_c":
                 featurePermissionStatus.setCanAccess(featurePermissions.isFeatureC());
-                return featurePermissionStatus;
+                break;
             default:
                 throw new Exception("Feature not found");
         }
-
+        return featurePermissionStatus;
     }
 
 }
