@@ -12,8 +12,4 @@ public abstract class BaseController {
     @Autowired
     FeaturePermissionService featurePermissionService;
 
-    protected void ValidateFeaturePermissionRequest(){
-        System.out.println("verifying the request objecct");
-    }
-
 }
